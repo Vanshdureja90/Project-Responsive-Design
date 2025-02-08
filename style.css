@@ -45,8 +45,6 @@ header{
 footer{
     display: grid;
     place-items: center;
-    min-height: 5vh;
-    width: 80vw;
 }
 
 
@@ -85,6 +83,8 @@ footer{
     footer{
         display: grid;
         flex-wrap: nowrap;
+        font-size: 2rem;
+        
     } 
 }
 @media (min-width:1025px){
