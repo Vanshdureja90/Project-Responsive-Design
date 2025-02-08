@@ -26,9 +26,11 @@ header{
 
 }
 .box{
+    
     border: 2px solid black;
     place-items: center;
     margin: 2vw 0;
+    padding: 2vh;
 }
 
 .box img{
@@ -37,39 +39,63 @@ header{
     height: 150px;
     width: 150px;
     margin-top: 3vh;
+    object-fit: cover;
 }
 
 footer{
     display: grid;
     place-items: center;
     min-height: 5vh;
-
 }
 
 
 
-@media (min-width:600px){
+@media (min-width:600px) and (max-width:1024px){
+    body{
+        margin: 0 1vh;
+       
+        
+    }
+    .box{
+        min-width: 40vw;
+    }
     .main-grid{
-        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        width: 100%;
+        grid-template-columns: repeat(2, minmax(31vw, 1fr));
         gap: 20px;
+        place-items: center;
     }
-    .box img{
-        height: 200px;
-        width: 200px;
+.box img{
+        height: 300px;
+        width: 300px;
     }
+    .box {
+        width: 1vw;
+    }
+    .box p,h3{
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .price{
+        font-size: 1.6rem;
+        text-align: center;
+
+    }
+    footer{
+        display: grid;
+        flex-wrap: nowrap;
+    } 
 }
-@media (min-width:1024px){
+@media (min-width:1025px){
     header{
         margin-top: 2vh;
     }
     .main-grid{
-        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        grid-template-columns: repeat(4, minmax(20vh, 1fr));
         gap: 48px;
         margin-bottom: 2vh;
     }
-    .box{
-        margin: 0 0;
-    }
+ 
     footer{
         min-height: 10vh;
         display: grid;
