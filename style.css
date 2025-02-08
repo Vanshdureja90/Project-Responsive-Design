@@ -94,14 +94,14 @@ footer{
     .main-grid{
         grid-template-columns: repeat(4, minmax(20vh, 1fr));
         gap: 48px;
-        margin-bottom: 2vh;
+        margin-bottom: -2vh;
     }
  
     footer{
         min-height: 10vh;
         display: grid;
         place-items: center;
-       
+       font-size: 1.4rem;
     }
 }
 
