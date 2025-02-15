@@ -45,11 +45,24 @@ header{
 footer{
     display: grid;
     place-items: center;
+    min-height: 5vh;
+}
+
+@media (min-width:600px) and (max-width:800px){
+    .main-grid{
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        gap: 1vh;
+    }
+    .box{
+        padding: 0 20px;
+        border-radius: 2vh;
+    }
+
 }
 
 
 
-@media (min-width:600px) and (max-width:1024px){
+@media (min-width:800px) and (max-width:1024px){
     body{
         margin: 0 1vh;
        
@@ -68,9 +81,7 @@ footer{
         height: 300px;
         width: 300px;
     }
-    .box {
-        width: 1vw;
-    }
+    
     .box p,h3{
         text-align: center;
         font-size: 1.6rem;
