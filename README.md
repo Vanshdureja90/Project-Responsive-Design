@@ -1,2 +1,2 @@
-In this, i have made front-end page in which i show the different products.
+In this, i have made a front-end page in which i show the different products.
 this is a fully responsive design for the mobile, tablet and laptop as well
